@@ -2,7 +2,7 @@
 <script lang='ts'>
 	import { browser } from '$app/environment';
 	if(browser){
-		window.onSignOn = function(googleUser) {
+		window.handleCredentialResponse = function(googleUser) {
 			var profile = googleUser.getBasicProfile();
 			console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
 			console.log('Name: ' + profile.getName());
@@ -22,6 +22,10 @@
 	
 	<p>Hello world</p>
 	<p>verify page</p>
-	<div class="g-signin2" data-onsuccess="onSignOn"></div>
+	<div id="g_id_onload"
+	data-client_id="770617905390-pte5busfebd6fhbcavhqojep7tsn5ojr.apps.googleusercontent.com"
+	data-callback="handleCredentialResponse">
+	</div>
+	<div class="g_id_signin" data-type="standard"></div>
 </section>
 

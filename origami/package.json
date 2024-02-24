@@ -23,6 +23,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@netlify/functions": "^2.6.0"
+		"@netlify/functions": "^2.6.0",
+		"mongodb": "^6.3.0",
+		"stellar-base": "^11.0.0",
+		"tweetnacl": "^1.0.3"
 	}
 }

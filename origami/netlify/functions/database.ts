@@ -1,4 +1,4 @@
-import { returnResponse } from '../../functionUtils';
+import { returnResponse } from '../functionUtils';
 import { MongoClient, ServerApiVersion } from 'mongodb';
 import {Keypair} from 'stellar-base';
 import {Handler, HandlerEvent, HandlerContext, HandlerResponse} from "@netlify/functions"

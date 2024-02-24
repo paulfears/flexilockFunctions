@@ -1,5 +1,4 @@
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="770617905390-pte5busfebd6fhbcavhqojep7tsn5ojr.apps.googleusercontent.com">
+
 <script>
     function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();

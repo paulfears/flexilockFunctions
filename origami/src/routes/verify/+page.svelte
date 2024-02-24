@@ -8,7 +8,7 @@
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
-}
+
 </script>
 <p>Hello world</p>
 <p>verify page</p>

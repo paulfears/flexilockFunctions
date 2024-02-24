@@ -23,6 +23,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@auth/core": "^0.27.0",
+		"@auth/sveltekit": "^0.13.0",
 		"@netlify/functions": "^2.6.0",
 		"mongodb": "^6.3.0",
 		"stellar-base": "^11.0.0",

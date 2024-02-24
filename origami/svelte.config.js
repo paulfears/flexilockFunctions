@@ -15,7 +15,8 @@ const config = {
 			edge: true,
 			split: false
 		})
-	}
+	},
+	handleHttpError: 'ignore'
 };
 
 export default config;

@@ -7,9 +7,19 @@
 		%sveltekit.head%
 		<script src="https://accounts.google.com/gsi/client" async defer></script>
 		<script>
+		function decodeJwtResponse(token) {
+			let base64Url = token.split('.')[1]
+			let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+			let jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+				return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+			}).join(''));
+			return JSON.parse(jsonPayload)
+    	}
 		window.handleCredentialResponse = function(googleUser, thing2) {
 			console.log(googleUser);
 			console.log(thing2);
+			let info = decodeJwtResponse(googleUser.credential);
+			console.log(info);
 			var profile = googleUser.getBasicProfile();
 			console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
 			console.log('Name: ' + profile.getName());

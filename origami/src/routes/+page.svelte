@@ -17,8 +17,10 @@
 	<p>verify page</p>
 	<div id="g_id_onload"
 	data-client_id="770617905390-pte5busfebd6fhbcavhqojep7tsn5ojr.apps.googleusercontent.com"
-	data-callback="handleCredentialResponse">
-	</div>
-	<div class="g_id_signin" data-type="standard"></div>
+	data-context="signin"
+	data-login_uri="https://origami3.netlify.app/.netlify/functions/handleLogin"
+	data-nonce=""
+	data-itp_support="true">
+</div>
 </section>
 

@@ -7,8 +7,9 @@
 		%sveltekit.head%
 		<script src="https://accounts.google.com/gsi/client" async defer></script>
 		<script>
-		window.handleCredentialResponse = function(googleUser) {
+		window.handleCredentialResponse = function(googleUser, thing2) {
 			console.log(googleUser);
+			console.log(thing2);
 			var profile = googleUser.getBasicProfile();
 			console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
 			console.log('Name: ' + profile.getName());
